@@ -3,9 +3,10 @@
 <!------change by Felix Tennouji------------->
 <html>
   <head>
-    <title>扫雷</title>
+    <title>临时站点</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style type="text/css">
       body {
         font-family: AppleColorEmoji;
@@ -142,7 +143,24 @@
       .unmasked {
         cursor: default;
       }
+      .container {
+    display: flex;
+    justify-content: center;
+  }
 
+  .gradient-div {
+    border: 2px solid purple;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, orange, lightgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 1.6; /* 设置段间距 */
+  }
       #map {
         white-space: nowrap;
       }
@@ -262,9 +280,24 @@
         left: -1px;
         top: -1px;
       }
+      underline-link {
+        text-decoration: none; /* 移除超链接默认的下划线 */
+        color: inherit; /* 继承父元素的颜色 */
+    }
     </style>
   </head>
   <body>
+    <div class="container">
+      <div class="gradient-div">
+        <p class="gradient-text" style="font-size: 20px;">这里是星云天角/亚斯茗厨的个人临时站</p>
+        <p class="gradient-text" style="font-size: 14px;">This is Felix Tennouji personal temporary web site [I don’t want to renew VPS]</p>
+        <p class="gradient-text">❤<b style="color: rgb(132, 17, 170);">&lt;</b><a href="https://zh.moegirl.org.cn/zh-hans/%E4%BA%9A%E6%96%AF%E8%8C%97" class="underline-link"  style="font-size: 18px;"><b>亚斯茗</b></a><b style="color: rgb(132, 17, 170);">&gt;</b> &nbsp;&nbsp;&nbsp;❤<b style="color: rgb(132, 17, 170);">&lt;</b><a href="https://prts.wiki/w/%E7%BE%BD%E6%AF%9B%E7%AC%94" class="underline-link"  style="font-size: 18px;"><b>羽毛笔</b></a><b style="color: rgb(132, 17, 170);">&gt;</b></p>
+        <p class="gradient-text">❤<b style="color: rgb(132, 17, 170);">&lt;</b><a href="https://x.com/Aassiill1313/status/1409072412075839491" class="underline-link"  style="font-size: 18px;"><b>Jasmine</b></a><b style="color: rgb(132, 17, 170);">&gt;</b> &nbsp;&nbsp;&nbsp;❤<b style="color: rgb(132, 17, 170);">&lt;</b><a href="https://www.pixiv.net/artworks/91825319" class="underline-link"  style="font-size: 18px;"><b>Rafaela&nbsp;Silva</b></a><b style="color: rgb(132, 17, 170);">&gt;</b></p>
+        <p class="gradient-text"><b style="color: rgb(132, 17, 170);">[</b><a href="https://bgm.tv/user/felixtennouji" class="underline-link"  style="font-size: 12px;"><b>Bamgumi【My ACGN Journal】</b></a><b style="color: rgb(132, 17, 170);">]</b> &nbsp;&nbsp;</p>
+        <p class="gradient-text"><b style="color: rgb(132, 17, 170);">[</b><a href="https://steamcommunity.com/id/FelixTennouji" class="underline-link"  style="font-size: 12px;"><b>Steam</b></a><b style="color: rgb(132, 17, 170);">]</b> &nbsp;&nbsp;<b style="color: rgb(132, 17, 170);">[</b><a href="https://github.com/FelixTennouji" class="underline-link"  style="font-size: 12px;"><b>Github</b></a><b style="color: rgb(132, 17, 170);">]</b>&nbsp;&nbsp;<b style="color: rgb(132, 17, 170);">[</b><a href="https://x.com/FelixTennouji" class="underline-link"  style="font-size: 12px;"><b>Twitter</b></a><b style="color: rgb(132, 17, 170);">]</b>&nbsp;&nbsp;<b style="color: rgb(132, 17, 170);">[</b><a href="https://space.bilibili.com/439014886" class="underline-link"  style="font-size: 12px;"><b>BiliBili</b></a><b style="color: rgb(132, 17, 170);">]</b></p>
+      </div>
+    </div>
+    <br>
     <div class="wrapper">
       <button type="button" class="settings js-settings" aria-haspopup="true" aria-expanded="false" aria-label="Settings"></button>
       <div class="js-settings-popup settings-popup">
@@ -295,9 +328,9 @@
       <div id="map" role="grid" aria-label="Mine field">
       </div>
       <div class="bar flex">
-        <div class="stat flex-cell"><div id="bombs-left">0</div><span class="small-text">炸 弹</span></div>
-        <div class="stat flex-cell"><div id="moves"></div><span class="small-text">点击数</span></div>
-        <div class="stat flex-cell"><div id="timer"></div><span class="small-text">时 间</span></div>
+        <div class="stat flex-cell"><div id="bombs-left">0</div><span class="small-text">Bombs</span></div>
+        <div class="stat flex-cell"><div id="moves"></div><span class="small-text">Click</span></div>
+        <div class="stat flex-cell"><div id="timer"></div><span class="small-text">Time</span></div>
       </div>
     </div>
     <div aria-live="assertive" class="feedback"></div>
@@ -690,7 +723,7 @@ var twemoji=function(){"use strict";var twemoji={base:(location.protocol==="http
               oReq.send();
           }
           //getReq(document.URL);
-          document.querySelector('.default-emoji').innerHTML = "404 NOT FOUND";
+          document.querySelector('.default-emoji').innerHTML = "Gaiaism";
     </script>
 
   </body>
