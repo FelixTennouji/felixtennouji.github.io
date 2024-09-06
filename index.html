@@ -666,7 +666,7 @@ var twemoji=function(){"use strict";var twemoji={base:(location.protocol==="http
       function restart () {
         clearInterval(game.timer)
         emojiset = document.getElementById('emojiset').value.split(' ')
-        game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('twemoji').checked)
+        game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('emoji').checked)
         document.querySelector('.js-settings-popup').classList.remove('show')
         return false
       }
